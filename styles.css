@@ -1,5 +1,3 @@
-
-
 .cssfondo{
 	width: 350px;
 	background-color: #3e3c3c;
@@ -9,17 +7,21 @@
 	border-radius: 7%;
 	border: 4px solid #201f1f;
 }
-#resultado{
-    height: 40px;
-    width: 40px;
-    top:20px;
-    left: 20px;
-    
-    position: absolute;
-    color:#000;
-    
-    }
-    
+.cssresultado{
+	width: 240px;
+	background-color: darkolivegreen;
+	height: 50px;
+	transform: translate(50px,-80px);
+	border-radius: 7%;
+	border: 4px solid #201f1f;
+	font-size: 20px;
+}
+.cssoperacion{
+	transform: translate(50px, 50px);
+	width: 240px;
+	height: 50px;
+	font-size: 20px;
+}
 
 .cssbotones{
 	background-color: #333232;
@@ -41,19 +43,19 @@
 	left: 250px;
 	
 }
-	#botonraizcuadrada{
+	#botonraiz{
 	top: 100px;
 	left: 15px;
 }
-	#botonmenos{
+	#botondivision{
 	top: 100px;
 	left: 95px;
 }
-	#botonmas{
+	#botonmultiplicar{
 	top: 100px;
 	left: 170px;
 }
-	#botonmultiplicar{
+	#botonborrar{
 	top: 100px;
 	left: 250px;
 }
@@ -69,7 +71,7 @@
 	top: 165px;
 	left: 170px;
 }
-	#botondivision{
+	#botonmenos{
 	top: 165px;
 	left: 250px;
 }
@@ -85,7 +87,7 @@
 	top: 230px;
 	left: 170px;
 }
-	#botonborrar{
+	#botonmas{
 	top: 230px;
 	left: 250px;
 }
@@ -113,6 +115,4 @@
 	top: 360px;
 	left: 170px;
 }
-
-
 

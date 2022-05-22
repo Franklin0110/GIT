@@ -1,24 +1,31 @@
 var operandoa;
 var operandob;
-var operacion;
+var operacion = "";
 var suma="";
 const resultado = document.getElementById("resultado");
-const operacion = document.getElementById("operacion");
+const operacion1 = document.getElementById("operacion");
 
 function botonmenos(){
     operandoa = suma;
     operacion = "-";
     suma = "";
     resultado.textContent ="";
-    operacion.textContent = "-"
-    
+    operacion1.textContent =operandoa + "-"
 }
+function botonraiz(){
+    operandoa = suma;
+    operacion = "√";
+    suma = "";
+    resultado.textContent ="";
+    operacion1.textContent = operandoa +"√"
+}
+
 function botonmas(){
     operandoa = suma;
     operacion = "+";
     suma = "";
     resultado.textContent ="";
-    operacion.textContent = "+"
+    operacion1.textContent = operandoa +"+"
     
 }
 function botonmultiplicar(){
@@ -26,14 +33,26 @@ function botonmultiplicar(){
     operacion = "*";
     suma = "";
     resultado.textContent ="";
-    operacion.textContent = "x"
+    operacion1.textContent =operandoa + "x"
+}
+function botondivision(){
+    operandoa = suma;
+    operacion1 = "/";
+    suma = "";
+    resultado.textContent ="";
+    operacion1.textContent = operandoa + "/"
 }
 function botonsiete(){
     suma+= 7;
     resultado.textContent +="7";
-    
- 
 }
+function botonborrar(){
+
+suma = "";
+resultado.textContent = "";
+
+}
+
 function botonocho(){
     suma+= 8;
     resultado.textContent +="8";
@@ -109,8 +128,11 @@ function resolver(){
         case "/":
             res = parseFloat(operandoa) / parseFloat(operandob);
             break;
+        case "√":
+        
+            res = Math.sqrt(parseFloat(operandoa));
     }
     suma=res;
-    resultado.textContent = suma;
-    operacions.textContent = "=";
+    resultado.textContent = operandoa + operacion + operandob + "=" + suma;
+    operacion1.textContent = "";
 }
